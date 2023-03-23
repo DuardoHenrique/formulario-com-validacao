@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com validação</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+</head>
+<body>
+    <main class="main">
+        <section class="informacao">
+            <h2 class="titulo">Ficou na dúvida?<br>Nos mande uma mensagem!</h2>
+            <p class="texto">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+        </section>
+
+        <form class="form" method="get">
+            <ul>
+                <li class="dados">
+                    <input class="input padrao" type="text" name="nome" id="nome" placeholder="Nome completo *" value="">
+                    <span class="msg-error none">campo obrigatório</span>
+                </li>
+                <li class="dados">
+                    <input class="input padrao" type="text" name="email" id="email" placeholder="Email *">
+                    <span class="msg-error none">campo obrigatório</span>
+                </li>
+                <li class="dados">
+                    <input class="input padrao" type="text" name="telefone" id="telefone" placeholder="Telefone *" autocomplete="off">
+                    <span class="msg-error none">campo obrigatório</span>
+                </li>
+                <li class="dados">
+                    <textarea class="input padrao" name="mensagem" id="mensagem" cols="30" rows="6" placeholder="Mensagem *"></textarea>
+                    <span class="msg-error none">campo obrigatório</span>
+                </li>
+                    <span>*campos obrigatórios</span>
+                <li>    
+                    <input id="btnSubmit" type="submit" value="Enviar">
+                </li>
+            </ul>
+        </form>
+
+    </main>
+
+    <script src="./src/js/validacao.js" type="text/javascript"></script>
+</body>
+</html>
