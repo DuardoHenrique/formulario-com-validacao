@@ -1,8 +1,8 @@
 const inputs = document.querySelectorAll('.input')
 const btnSubmit = document.getElementById('btnSubmit') 
-const form = document.getElementsByClassName('form')[0]
+const formulario = document.getElementsByClassName('form')[0]
 
-form.addEventListener("submit", (form) => {
+formulario.addEventListener("submit", (form) => {
     form.preventDefault()
 })
 
